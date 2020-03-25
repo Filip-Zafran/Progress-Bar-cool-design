@@ -1,0 +1,29 @@
+/* bar */
+.bar-container {
+    width: 200px;
+    height: 30px;
+    margin: 40px;
+    background-color: gray;
+    float: right;
+}
+
+.bar {
+    background-color: green;
+    height: 100%;
+    width: 0%;
+}
+
+/* heart */
+.heart-container {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+
+/* background */
+body {
+    background-image: url("background.jpg");
+    background-size: 100%;
+}

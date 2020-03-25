@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progress bar</title>
+
+    <link rel="stylesheet" type="text/css" href="bar.css">
+    <script type="text/javascript" src="moi.js"></script>
+
 </head>
 
 <body>
@@ -31,78 +35,6 @@
 
 
 
-
-
-
-    <script>
-        function fillBar(seconds) {
-
-            const bar = document.querySelector('.bar')
-
-            let atPercent = 0;
-
-            const interval = setInterval(() => {
-                    bar.style.width = atPercent + '%'
-                    atPercent++;
-
-                    // check if its running correctly 
-                    console.log('running at', atPercent)
-
-                    // check that the percentages doesnt go over 100
-                    if (atPercent >= 100) {
-
-                        clearInterval(interval)
-                    }
-
-
-                    // set that it updates 1% every millisecond
-                },
-                (seconds * 1000) / 100)
-
-        }
-
-        // heart
-        var bar = new ProgressBar.Path('#heart-path', {
-            easing: 'easeInOut',
-            duration: 1400
-        });
-
-        bar.set(0);
-        bar.animate(1.0);
-    </script>
-
-
-    <style>
-        /* bar */
-        .bar-container {
-            width: 200px;
-            height: 30px;
-            margin: 40px;
-            background-color: gray;
-            float: right;
-        }
-
-        .bar {
-            background-color: green;
-            height: 100%;
-            width: 0%;
-        }
-
-        /* heart */
-        .heart-container {
-            margin: 20px;
-            width: 200px;
-            height: 200px;
-            float: left;
-        }
-
-
-        /* background */
-        body {
-            background-image: url("background.jpg");
-            background-size: 100%;
-        }
-    </style>
 
 </body>
 
