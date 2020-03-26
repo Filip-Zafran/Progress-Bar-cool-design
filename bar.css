@@ -3,14 +3,39 @@
     width: 200px;
     height: 30px;
     margin: 40px;
-    background-color: gray;
+    margin-left: 0;
+    background-color: darkblue;
     float: right;
+
+
 }
 
 .bar {
-    background-color: green;
+    background-color: lightblue;
     height: 100%;
     width: 0%;
+}
+
+.barContainer {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.barButton {
+    height: 30px;
+    font-family: 'Allerta Stencil',
+        sans-serif;
+    /* font-family: 'Nova Round',
+        cursive; */
+    font-size: large;
+    /* svjetlo plava */
+    color: lightblue;
+    /* tamno plava */
+    /* color: 095994; */
+    background-color: darkblue;
+    border: 0;
 }
 
 /* heart */
@@ -19,11 +44,25 @@
     width: 200px;
     height: 200px;
     float: left;
+
+    position: relativ
 }
+
+.heartButton {
+    position: absolute
+}
+
+/* svijetlo crvena
+color: ff6312
+
+tamno crvena
+color: 4e0204 */
 
 
 /* background */
 body {
     background-image: url("background.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
 }
