@@ -1,55 +1,58 @@
 /* bar */
 .bar-container {
-    width: 200px;
-    height: 30px;
-    margin: 40px;
-    margin-left: 0;
-    background-color: darkblue;
-    float: right;
-
-
+  width: 200px;
+  height: 30px;
+  margin: 40px;
+  margin-left: 0;
+  background-color: lightblue;
+  float: right;
 }
 
 .bar {
-    background-color: lightblue;
-    height: 100%;
-    width: 0%;
+  background-color: darkblue;
+  height: 100%;
+  width: 0%;
 }
 
 .barContainer {
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .barButton {
-    height: 30px;
-    font-family: 'Allerta Stencil',
-        sans-serif;
-    /* font-family: 'Nova Round',
+  height: 30px;
+  font-family: "Allerta Stencil", sans-serif;
+  /* font-family: 'Nova Round',
         cursive; */
-    font-size: large;
-    /* svjetlo plava */
-    color: lightblue;
-    /* tamno plava */
-    /* color: 095994; */
-    background-color: darkblue;
-    border: 0;
+  font-size: large;
+  /* svjetlo plava */
+  color: lightblue;
+  /* tamno plava */
+  /* color: 095994; */
+  background-color: darkblue;
+  border: 0;
 }
 
 /* heart */
 .heart-container {
-    margin: 20px;
-    width: 200px;
-    height: 200px;
-    float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  float: left;
 
-    position: relativ
+  position: relativ;
 }
 
 .heartButton {
-    position: absolute
+  position: absolute;
+  height: 30px;
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: large;
+  color: darkred;
+  background-color: rgb(250, 51, 51);
+  border: 0;
 }
 
 /* svijetlo crvena
@@ -58,11 +61,10 @@ color: ff6312
 tamno crvena
 color: 4e0204 */
 
-
 /* background */
 body {
-    background-image: url("background.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: black;
+  background-image: url("background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
 }

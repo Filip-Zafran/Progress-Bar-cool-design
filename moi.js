@@ -11,7 +11,7 @@ function fillBar(seconds) {
     console.log("running at", atPercent);
 
     // check that the percentages doesnt go over 100
-    if (atPercent >= 100) {
+    if (atPercent > 100) {
       clearInterval(interval);
     }
 
