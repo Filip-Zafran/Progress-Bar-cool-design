@@ -20,10 +20,12 @@ function fillBar(seconds) {
 }
 
 // heart
-var bar = new ProgressBar.Path("#heart-path", {
-  easing: "easeInOut",
-  duration: 1400
-});
+function fillHeart() {
+  var heart = new ProgressBar.Path("#heart-path", {
+    easing: "easeInOut",
+    duration: 1400
+  });
 
-bar.set(0);
-bar.animate(1.0);
+  heart.set(0);
+  heart.animate(1.0);
+}

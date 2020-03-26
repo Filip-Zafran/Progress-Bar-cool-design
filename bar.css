@@ -1,3 +1,12 @@
+/* background */
+
+body {
+  background-image: url("background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
 /* bar */
 .bar-container {
   width: 200px;
@@ -16,55 +25,54 @@
 
 .barContainer {
   display: flex;
-  /* flex-direction: row; */
   justify-content: flex-end;
   align-items: center;
+  margin-top: 70px;
 }
 
 .barButton {
   height: 30px;
   font-family: "Allerta Stencil", sans-serif;
-  /* font-family: 'Nova Round',
-        cursive; */
   font-size: large;
-  /* svjetlo plava */
   color: lightblue;
-  /* tamno plava */
-  /* color: 095994; */
   background-color: darkblue;
   border: 0;
 }
 
 /* heart */
-.heart-container {
+.heartContainer {
+  position: relative;
+}
+
+.heart-symbol {
   margin: 20px;
   width: 200px;
   height: 200px;
-  float: left;
+  /* float: left; */
 
-  position: relativ;
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 
 .heartButton {
-  position: absolute;
   height: 30px;
   font-family: "Allerta Stencil", sans-serif;
   font-size: large;
   color: darkred;
   background-color: rgb(250, 51, 51);
   border: 0;
+
+  position: absolute;
+  top: 140px;
+  left: 128px;
 }
+
+/* tamno plava */
+/* color: 095994; */
 
 /* svijetlo crvena
 color: ff6312
 
 tamno crvena
 color: 4e0204 */
-
-/* background */
-body {
-  background-image: url("background.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: black;
-}
