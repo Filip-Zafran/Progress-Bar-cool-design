@@ -19,6 +19,17 @@ function fillBar(seconds) {
   }, (seconds * 1000) / 100);
 }
 
+// GROW AFFECT
+// function barGrow {
+//   for (atPercent = 100) {
+//     barContainer
+//       &.grow {
+//       transition: all .2s ease -in -out;
+//       transform: scale(1.5);
+//     }
+//   }
+// }
+
 // heart
 function fillHeart() {
   var heart = new ProgressBar.Path("#heart-path", {
@@ -29,3 +40,5 @@ function fillHeart() {
   heart.set(0);
   heart.animate(1.0);
 }
+
+// https://kimmobrunfeldt.github.io/progressbar.js/
