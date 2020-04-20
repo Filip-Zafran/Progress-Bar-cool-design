@@ -41,7 +41,11 @@
         </svg>
       </div>
 
-      <button class="heartButton" onclick="fillHeart()">
+      <audio id="HeartbeatSound" src="Heartbeat.mp3" preload="auto"></audio>
+      <button
+        class="heartButton"
+        onclick="document.getElementById('HeartbeatSound').play(), fillHeart()"
+      >
         BEAT
 
         <!-- &lt;3 -->
@@ -50,10 +54,17 @@
 
     <!-- bar -->
     <div class="barContainer">
-      <button class="barButton" onclick="fillBar(2)">GO</button>
+      <audio id="FreezeSound" src="Freeze.mp3" preload="auto"></audio>
+      <button
+        class="barButton"
+        onclick="document.getElementById('FreezeSound').play(), fillBar(2)"
+      >
+        GO
+      </button>
 
       <!-- wave  -->
       <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    
         <path
           fill="#0099ff"
           fill-opacity="1"

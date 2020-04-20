@@ -34,7 +34,7 @@ function fillBar(seconds) {
 function fillHeart() {
   var heart = new ProgressBar.Path("#heart-path", {
     easing: "easeInOut",
-    duration: 1400
+    duration: 1400,
   });
 
   heart.set(0);
@@ -43,3 +43,6 @@ function fillHeart() {
 
 // link fill heart
 // https://kimmobrunfeldt.github.io/progressbar.js/
+
+// environment
+// https://progressbarjs.readthedocs.io/en/1.0.0/
